@@ -1,0 +1,9 @@
+<GtExpress_Request ShowWithoutPlaces="0" DetailNumPlaces="1" DetailTypePlaces="0" Type="TrainPlaces">
+    <StationFrom>2100001</StationFrom>
+    <StationTo>2100100</StationTo>
+    <Direction Type="Forward">
+        <DepDate>14.07.2017</DepDate>
+        <DepTime>07:44</DepTime>
+        <Train Number="100Б"/>
+    </Direction>
+</GtExpress_Request>

@@ -1,0 +1,3 @@
+<GtExpress_Response Type="ScheduleStation">
+	<Error Code="2001">Ошибка обмена с системой Экспресс</Error>
+</GtExpress_Response>

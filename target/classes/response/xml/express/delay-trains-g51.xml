@@ -1,0 +1,20 @@
+<GtExpress_Response Type="DelayTrains">
+    <Date>01.01.2010</Date>
+    <Station>БРЯНСК</Station>
+    <Trains>
+        <Train Number="002A">
+            <Route>
+                <Station>МОСКВА</Station>
+                <Station>КАЗАНЬ</Station>
+            </Route>
+            <Arrival ScheduleTime="17:40" DelayTime="01:45" />
+        </Train>
+        <Train Number="002Б">
+            <Route>
+                <Station>МОСКВА</Station>
+                <Station>КАЗАНЬ</Station>
+            </Route>
+            <Arrival ScheduleTime="17:40" DelayTime="01:45" />
+        </Train>
+    </Trains>
+</GtExpress_Response>

@@ -1,0 +1,120 @@
+<GtExpress_Response Type="Places" ShowWithoutPlaces="0/1">
+    <Direction Type="Forward">
+        <PassRoute From="МОСКВА" To="САНКТ-ПЕТЕРБУРГ" />
+        <NotAllTrains/>
+        <Trains Date="01.01.2010">
+            <Train Number="107ЙА" Number2="156*МА" Type="СК СКРСТ ФИРМ">
+                <Route>
+                    <Station>МОСКВА</Station>
+                    <Station>С-ПЕТЕР-ГЛ</Station>
+                    <Station>ХЕЛЬСИНКИ</Station>
+                </Route>
+                <Departure Time="15:30" Stop="01:15" />
+                <Arrival Date="02.01.2010" Time="17:36" Stop="00:25" />
+                <TimeInWay>008:05</TimeInWay>
+                <ElRegPossible/>
+                <Brand>САПСАН</Brand>
+                <FirmName>Красная стрела</FirmName>
+                <Comments>
+                    <Info>ПОЛУЧИТЬ БИЛЕТ НА СТАНЦИИ ОТПРАВЛЕНИЯ НЕЛЬЗЯ</Info>
+                    <Info>ЗАГРАНПАСПОРТ ОБЯЗАТЕЛЕН</Info>
+                </Comments>
+                <Places>
+                    <Cars Type="Общий" IndexType="1" FreeSeats="120">
+                        <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                               SeatsLateralDn="25" SeatsLateralUp="15"
+                               FreeComp="22"/>
+                        <Tariffs>
+                            <Tariff>
+                                <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                                <ClassServiceInt>1/2</ClassServiceInt>
+                                <AddSigns>У1 МЖ</AddSigns>
+                                <Tariff>1800.2</Tariff>
+                                <Tariff2>2100.5</Tariff2>
+                                <TariffService>210.0</TariffService>
+                                <Carrier Name="ФПД" />
+                                <Owner Type="РЖД/ОКТ">
+                                    <Country Code="20" Name="РОССИЯ" />
+                                    <Railway Code="EF" Name="ОКТЯБРЬСКАЯ" />
+                                </Owner>
+                                <SaleOnTwo/>
+                                <SaleOnFour/>
+                                <ElRegPossible><UK/><AKP/></ElRegPossible>
+                                <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                                       SeatsLateralDn="25" SeatsLateralUp="15"
+                                       FreeComp="12" />
+                            </Tariff>
+                            <Tariff>
+                                <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                                <ClassServiceInt>1/2</ClassServiceInt>
+                                <AddSigns>У1 МЖ</AddSigns>
+                                <Tariff>1800.2</Tariff>
+                                <Tariff2>2100.5</Tariff2>
+                                <TariffService>210.0</TariffService>
+                                <Carrier Name="ФПД" />
+                                <Owner Type="РЖД/ОКТ">
+                                    <Country Code="20" Name="РОССИЯ" />
+                                    <Railway Code="EF" Name="ОКТЯБРЬСКАЯ" />
+                                </Owner>
+                                <SaleOnTwo/>
+                                <SaleOnFour/>
+                                <ElRegPossible><UK/><AKP/></ElRegPossible>
+                                <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                                       SeatsLateralDn="25" SeatsLateralUp="15"
+                                       FreeComp="12" />
+                            </Tariff>
+                        </Tariffs>
+                    </Cars>
+                    <Cars Type="Общий" IndexType="1" FreeSeats="120">
+                        <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                               SeatsLateralDn="25" SeatsLateralUp="15"
+                               FreeComp="22"/>
+                        <Tariffs>
+                            <Tariff>
+                                <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                                <ClassServiceInt>1/2</ClassServiceInt>
+                                <AddSigns>У1 МЖ</AddSigns>
+                                <Tariff>1800.2</Tariff>
+                                <Tariff2>2100.5</Tariff2>
+                                <TariffService>210.0</TariffService>
+                                <Carrier Name="ФПД" />
+                                <Owner Type="РЖД/ОКТ">
+                                    <Country Code="20" Name="РОССИЯ" />
+                                    <Railway Code="EF" Name="ОКТЯБРЬСКАЯ" />
+                                </Owner>
+                                <SaleOnTwo/>
+                                <SaleOnFour/>
+                                <ElRegPossible><UK/><AKP/></ElRegPossible>
+                                <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                                       SeatsLateralDn="25" SeatsLateralUp="15"
+                                       FreeComp="12" />
+                            </Tariff>
+                            <Tariff>
+                                <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                                <ClassServiceInt>1/2</ClassServiceInt>
+                                <AddSigns>У1 МЖ</AddSigns>
+                                <Tariff>1800.2</Tariff>
+                                <Tariff2>2100.5</Tariff2>
+                                <TariffService>210.0</TariffService>
+                                <Carrier Name="ФПД" />
+                                <Owner Type="РЖД/ОКТ">
+                                    <Country Code="20" Name="РОССИЯ" />
+                                    <Railway Code="EF" Name="ОКТЯБРЬСКАЯ" />
+                                </Owner>
+                                <SaleOnTwo/>
+                                <SaleOnFour/>
+                                <ElRegPossible><UK/><AKP/></ElRegPossible>
+                                <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                                       SeatsLateralDn="25" SeatsLateralUp="15"
+                                       FreeComp="12" />
+                            </Tariff>
+                        </Tariffs>
+                    </Cars>
+                </Places>
+            </Train>
+            <Train/>
+        </Trains>
+        <Trains Date="02.01.2010"/>
+    </Direction>
+    <Direction Type="Backward"/>
+</GtExpress_Response>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GtExpress_Response Type="TrainScheme">
+    <Train Number="648Б" Number2="648Б">
+        <Car Number="01" SubType="74С" Type="С">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="3С" />
+            <Seats Count="062" First="001" Last="062" />
+        </Car>
+        <Car Number="02" SubType="74С" Type="С">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="3С" />
+            <Seats Count="062" First="001" Last="062" />
+        </Car>
+        <Car Number="03" SubType="74С" Type="С">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="3С" />
+            <Seats Count="062" First="001" Last="062" />
+        </Car>
+        <Car Number="04" SubType="74С" Type="С">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="2В" />
+            <Seats Count="058" First="001" Last="058" />
+        </Car>
+        <Car Number="05" SubType="74С" Type="С">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="2В" />
+            <Seats Count="058" First="001" Last="058" />
+        </Car>
+        <Car Number="06" SubType="74С" Type="С">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="1С" />
+            <Seats Count="036" First="001" Last="036" />
+        </Car>
+        <Car Number="07" SubType="79К" Type="К">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="2К" />
+            <Seats Count="028" First="009" Last="036" />
+        </Car>
+        <Car Number="08" SubType="02Л" Type="Л">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="1Л" />
+            <Seats Count="018" First="001" Last="018" />
+        </Car>
+        <Car Number="09" SubType="79К" Type="К">
+            <Route>
+                <Station>МИНСК ПАСС</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="2К" />
+            <Seats Count="034" First="003" Last="036" />
+        </Car>
+        <Car Number="33" SubType="41П" Type="П">
+            <Route>
+                <Station>АРХАНГЕЛ Г</Station>
+                <Station>ГОМЕЛЬ ПАС</Station>
+            </Route>
+            <Railway Code="13" Name="БЕЛОРУССКАЯ">БЧ</Railway>
+            <ClassService Type="3П" />
+            <Seats Count="052" First="001" Last="052" />
+        </Car>
+    </Train>
+</GtExpress_Response>

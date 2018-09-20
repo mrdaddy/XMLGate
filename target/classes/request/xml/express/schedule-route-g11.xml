@@ -1,0 +1,18 @@
+<GtExpress_Request Type="ScheduleRoute">
+	<StationFrom>станция отправления</StationFrom>
+	<StationTo>станция назначения</StationTo>
+	<Direction Type="Forward">
+		<DepDate>ДД.ММ.ГГГГ</DepDate>
+		<FullDay />
+		<DepTime From="ЧЧ:ММ" To="ЧЧ:ММ">123</DepTime>
+		<ArvTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</ArvTime>
+	</Direction>
+	<Direction Type="Backward">
+		<DepDate>ДД.ММ.ГГГГ</DepDate>
+		<FullDay />
+		<DepTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</DepTime>
+		<ArvTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</ArvTime>
+	</Direction>
+	<Standard />
+	<Filter>Б</Filter>
+</GtExpress_Request>

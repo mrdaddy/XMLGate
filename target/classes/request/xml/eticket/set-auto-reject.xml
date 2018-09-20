@@ -1,0 +1,3 @@
+<GtETicket_Request Type="SetAutoReject">
+    <Order ID="12345679" AutoReject="время в минутах" />
+</GtETicket_Request>

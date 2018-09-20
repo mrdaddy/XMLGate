@@ -1,0 +1,163 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtExpress_Response" type="GtExpress_ResponseType"/>
+    <xs:complexType name="PassRouteType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="From"/>
+                <xs:attribute type="xs:string" name="To"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DateTimeType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Date" use="optional"/>
+                <xs:attribute type="xs:string" name="Time" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="RouteType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Station" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DepartureType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Time"/>
+                <xs:attribute type="xs:string" name="Stop"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ArrivalType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Date"/>
+                <xs:attribute type="xs:string" name="Time"/>
+                <xs:attribute type="xs:string" name="Stop"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CommentsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Info" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ClassServiceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Type" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CarrierType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CountryType" mixed="true">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Name" minOccurs="0"/>
+            <xs:element type="xs:integer" name="Distance" minOccurs="0"/>
+            <xs:element type="xs:float" name="TariffBillet" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:integer" name="Code" use="optional"/>
+        <xs:attribute type="xs:string" name="Name" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="RailwayType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Code" use="optional"/>
+                <xs:attribute type="xs:string" name="Name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="OwnerType">
+        <xs:sequence>
+            <xs:element type="CountryType" name="Country"/>
+            <xs:element type="RailwayType" name="Railway"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="ElRegPossibleType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="UK"/>
+            <xs:element type="xs:string" name="AKP"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SeatsType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:integer" name="SeatsUndef" use="optional"/>
+                <xs:attribute type="xs:integer" name="SeatsDn" use="optional"/>
+                <xs:attribute type="xs:integer" name="SeatsUp" use="optional"/>
+                <xs:attribute type="xs:integer" name="SeatsLateralDn" use="optional"/>
+                <xs:attribute type="xs:integer" name="SeatsLateralUp" use="optional"/>
+                <xs:attribute type="xs:integer" name="FreeComp" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="FareType">
+        <xs:sequence>
+            <xs:element type="ClassServiceType" name="ClassService"/>
+            <xs:element type="xs:string" name="ClassServiceInt"/>
+            <xs:element type="xs:string" name="AddSigns"/>
+            <xs:element type="xs:float" name="Tariff"/>
+            <xs:element type="xs:float" name="TariffService"/>
+            <xs:element type="xs:float" name="TariffBillet"/>
+            <xs:element type="xs:float" name="TariffPlac"/>
+            <xs:element type="CarrierType" name="Carrier"/>
+            <xs:element type="OwnerType" name="Owner"/>
+            <xs:element type="xs:string" name="SaleOnTwo"/>
+            <xs:element type="xs:string" name="SaleOnFour"/>
+            <xs:element type="xs:integer" name="Distance"/>
+            <xs:element type="CountryType" name="Country" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="ElRegPossibleType" name="ElRegPossible"/>
+            <xs:element type="xs:string" name="Station"/>
+            <xs:element type="xs:string" name="NonSmoking"/>
+            <xs:element type="SeatsType" name="Seats"/>
+            <xs:element type="xs:string" name="Places"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CarType">
+        <xs:sequence>
+            <xs:element type="FareType" name="Fare" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number" use="optional"/>
+        <xs:attribute type="xs:string" name="Type" use="optional"/>
+        <xs:attribute type="xs:string" name="TrainLetter" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="TrainType">
+        <xs:sequence>
+            <xs:element type="RouteType" name="Route"/>
+            <xs:element type="DepartureType" name="Departure"/>
+            <xs:element type="ArrivalType" name="Arrival"/>
+            <xs:element type="xs:string" name="TimeInWay"/>
+            <xs:element type="xs:string" name="ElRegPossible"/>
+            <xs:element type="DateTimeType" name="DepartureTrain"/>
+            <xs:element type="xs:string" name="Length"/>
+            <xs:element type="xs:string" name="Brand"/>
+            <xs:element type="xs:string" name="FirmName"/>
+            <xs:element type="CommentsType" name="Comments"/>
+            <xs:element type="CarType" name="Car" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number"/>
+        <xs:attribute type="xs:string" name="Number2"/>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+    <xs:complexType name="TrainsType">
+        <xs:sequence>
+            <xs:element type="TrainType" name="Train"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Date"/>
+    </xs:complexType>
+    <xs:complexType name="GtExpress_ResponseType">
+        <xs:sequence>
+            <xs:element type="PassRouteType" name="PassRoute"/>
+            <xs:element type="TrainsType" name="Trains"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

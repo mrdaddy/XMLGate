@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtExpress_Request" type="GtExpress_RequestType"/>
+    <xs:complexType name="DepTimeType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="From" use="optional"/>
+                <xs:attribute type="xs:string" name="To" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ArvTimeType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="From" use="optional"/>
+                <xs:attribute type="xs:string" name="To" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DirectionRequestType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="DepDate"/>
+            <xs:element type="xs:string" name="FullDay"/>
+            <xs:element type="DepTimeType" name="DepTime"/>
+            <xs:element type="ArvTimeType" name="ArvTime"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="GtExpress_RequestType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="StationFrom"/>
+            <xs:element type="xs:string" name="StationTo"/>
+            <xs:element type="DirectionRequestType" name="Direction" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="xs:string" name="Standard"/>
+            <xs:element type="xs:string" name="Filter"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,4 @@
+<GtExpress_Request Type="TrainScheme">
+    <Train Number="номер поезда" />
+    <Date>дата</Date>
+</GtExpress_Request>

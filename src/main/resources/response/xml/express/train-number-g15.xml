@@ -1,0 +1,14 @@
+<GtExpress_Response Type="TrainNumber">
+    <Train Number="002А">
+        <Route>
+            <Station>МОСКВА</Station>
+            <Station>С-ПЕТЕР-ГЛ</Station>
+        </Route>
+    </Train>
+    <Train Number="002Б">
+        <Route>
+            <Station>МОСКВА</Station>
+            <Station>С-ПЕТЕР-ГЛ</Station>
+        </Route>
+    </Train>
+</GtExpress_Response>

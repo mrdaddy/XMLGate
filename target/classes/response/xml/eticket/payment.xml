@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GtETicket_Response Type="Payment">
+    <Order ID="4702531" Status="0" StatusInfo="Выполнено" ExpressID="75665876656424" />
+    <Registration Status="1" StopDate="12.08.2016" StopTime="19:30" />
+    <Operation Date="09.08.2016" Time="11:56" DB="Б" HP="100" HT="05" />
+    <Tickets>
+        <Ticket Number="1" ID="5721024" ExpressID="75665876656424" />
+    </Tickets>
+</GtETicket_Response>

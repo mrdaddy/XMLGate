@@ -1,0 +1,69 @@
+<GtETicket_Response Type="BuyTicket">
+    <Order ID="123456789" ExpressID="12345678901234" CreateDate="01.01.2010"
+           CreateTime="13:40"/>
+    <Departure Train="112МФ" TrainCat="ФИРМ" TrainType="СКОРЫЙ"
+               Date="10.01.2010" Time="19:05"
+               Station="МОСКВА КАЗ" StationCode="2000001"/>
+    <Arrival Train="123МИ" Date="11.01.2010" Time="04:40"
+             Station="КАЗАНЬ ПАСС" StationCode="2000345"/>
+    <Carrier Code="01" Inn="7708709686">ОАО "ФПК"</Carrier>
+    <Car Number="10" Type="ЛЮКС">
+        <ClassService Type="1Б"/>
+        <AddSigns>У1 МЖ</AddSigns>
+        <Carrier Name="МОСКОВСКИЙ РДОП"/>
+        <Owner Type="МСК"/>
+        <TripClass>00</TripClass>
+    </Car>
+    <Tariff>1234.5</Tariff>
+    <TariffEuro>001234.00</TariffEuro>
+    <PaymentType>W</PaymentType>
+    <Agent>ФПК</Agent>
+    <Subagent>256</Subagent>
+    <Seats Count="4">001,002,003,004</Seats>
+    <SignGA>ТРАНЗИТ ЧЕРЕЗ СНГ</SignGA>
+    <SignGB>ВРЕМЯ ОТПР И ПРИБ МОСКОВСКОЕ</SignGB>
+    <SignR>МУЖСКОЕ</SignR>
+    <Tickets>
+        <Ticket Number="1" ID="12312" ExpressID="12345678901234"
+                NumberReservation="123456789012">
+            <Tariff>820.6</Tariff>
+            <TariffEuro>001234.00</TariffEuro>
+            <TariffNDS>50.2</TariffNDS>
+            <TariffBP>700.0</TariffBP>
+            <TariffB>400.0</TariffB>
+            <TariffP>300.0</TariffP>
+            <TariffInsurance>30.0</TariffInsurance>
+            <TariffService>320.0</TariffService>
+            <TariffServiceNDS>32.0</TariffServiceNDS>
+            <TariffType>ДЕТСКИЙ</TariffType>
+            <TariffInfo>05.01.2010</TariffInfo>
+            <PassCount>2</PassCount>
+            <Seats>001,002</Seats>
+            <SeatsType>НИЖНИЕ</SeatsType>
+            <D5/>
+            <Passenger Doc="ПН4505123456" Name="ПУПКИН=ВЛАДИМИР=ВЛАДИМИРОВИЧ"/>
+            <Passenger Doc="ПН4505123456" Name="ПУПКИН=ВЛАДИМИР=ВЛАДИМИРОВИЧ"/>
+        </Ticket>
+        <Ticket Number="2" ID="12313" ExpressID="12341178901234"
+                NumberReservation="123456789012">
+            <Tariff>820.6</Tariff>
+            <TariffEuro>001234.00</TariffEuro>
+            <TariffNDS>50.2</TariffNDS>
+            <TariffBP>700.0</TariffBP>
+            <TariffB>400.0</TariffB>
+            <TariffP>300.0</TariffP>
+            <TariffInsurance>30.0</TariffInsurance>
+            <TariffService>320.0</TariffService>
+            <TariffServiceNDS>32.0</TariffServiceNDS>
+            <TariffType>ДЕТСКИЙ</TariffType>
+            <TariffInfo>05.01.2010</TariffInfo>
+            <PassCount>2</PassCount>
+            <Seats>001,002</Seats>
+            <SeatsType>НИЖНИЕ</SeatsType>
+            <D5/>
+            <Passenger Doc="ПН4505123456" Name="ПУПКИН=ВЛАДИМИР=ВЛАДИМИРОВИЧ"/>
+            <Passenger Doc="ПН4505123456" Name="ПУПКИН=ВЛАДИМИР=ВЛАДИМИРОВИЧ"/>
+        </Ticket>
+    </Tickets>
+    <II WB="М" WM="М" HP="97" DB="М" HT="44"/>
+</GtETicket_Response>

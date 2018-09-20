@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtExpress_Request" type="GtExpress_RequestType"/>
+    <xs:complexType name="TrainType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Number"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="GtExpress_RequestType">
+        <xs:sequence>
+            <xs:element type="TrainType" name="Train"/>
+            <xs:element type="xs:string" name="Date"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

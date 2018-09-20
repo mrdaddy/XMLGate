@@ -1,0 +1,37 @@
+<GtExpress_Response Type="ScheduleRoute">
+	<Direction Type="Forward">
+		<PassRoute From="МОСКВА" To="КАЗАНЬ" CodeFrom="220120" CodeTo="213213" />
+		<NotAllTrains />
+		<Trains Date="01.01.2010">
+			<Train Number="112МВ" Number2="00035" Number3="00036">
+                <StorageIC>1</StorageIC>
+				<Route CodeFrom="2000001" CodeTo="2004004">
+					<Station>МОСКВА</Station>
+					<Station>КАЗАНЬ ПАСС</Station>
+					<Station>ЧЕБОКСАРЫ</Station>
+				</Route>
+				<Departure Time="00:30" Stop="00:15" />
+				<Arrival Date="02.01.2010" Time="12:52" Stop="01:35" />
+				<TimeInWay>127:28</TimeInWay>
+				<DaysOfGo>ПО 125</DaysOfGo>
+				<Distance>840</Distance>
+				<Firm />
+			</Train>
+            <Train Number="112МВ" Number2="00035" Number3="00036">
+                <StorageIC>1</StorageIC>
+                <Route CodeFrom="2000001" CodeTo="2004004">
+                    <Station>МОСКВА</Station>
+                    <Station>КАЗАНЬ ПАСС</Station>
+                    <Station>ЧЕБОКСАРЫ</Station>
+                </Route>
+                <Departure Time="00:30" Stop="00:15" />
+                <Arrival Date="02.01.2010" Time="12:52" Stop="01:35" />
+                <TimeInWay>127:28</TimeInWay>
+                <DaysOfGo>ПО 125</DaysOfGo>
+                <Distance>840</Distance>
+                <Firm />
+            </Train>
+		</Trains>
+	</Direction>
+	<Direction Type="Backward"></Direction>
+</GtExpress_Response>

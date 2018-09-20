@@ -1,0 +1,29 @@
+<GtETicket_Response Type="ExpressStatus">
+    <Order ID="123456789" Status="X" ExpressID="12345678901233" />
+    <Tickets>
+        <Ticket Number="2" ID="1234123" ExpressID="12345678901244" State="4">
+            <Return RetTariff="1500.3" KRS="12345678901234">
+                <RetTypeInfo>ВОЗВРАТ ПО ПРЕТЕНЗИИ</RetTypeInfo>
+                <Info>БЕЗ ШТРАФА</Info>
+                <Operation Date="01.01.2013" Time="17:40" />
+                <Payment>W</Payment>
+                <TimeBeforeDep>1545:00</TimeBeforeDep>
+                <Agent>ФПК</Agent>
+                <Subagent>256</Subagent>
+                <II WB="М" M="М" HP="97" DB="М" HT="44" />
+            </Return>
+        </Ticket>
+        <Ticket Number="2" ID="1234123" ExpressID="12345678901244" State="5">
+            <Return RetTariff="1500.3" KRS="12345678901234">
+                <RetTypeInfo>ВОЗВРАТ ПО ПРЕТЕНЗИИ</RetTypeInfo>
+                <Info>БЕЗ ШТРАФА</Info>
+                <Operation Date="01.01.2013" Time="17:40" />
+                <Payment>W</Payment>
+                <TimeBeforeDep>1545:00</TimeBeforeDep>
+                <Agent>ФПК</Agent>
+                <Subagent>256</Subagent>
+                <II WB="М" WM="М" HP="97" DB="М" HT="44" />
+            </Return>
+        </Ticket>
+    </Tickets>
+</GtETicket_Response>

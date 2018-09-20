@@ -1,0 +1,9 @@
+<GtExpress_Request Type="TrainCarPlaces">
+    <StationFrom>станция отправления</StationFrom>
+    <StationTo>станция назначения</StationTo>
+    <Date>ДД.ММ.ГГГГ</Date>
+    <DepTime>Время отправления поезда</DepTime>
+    <Train Number="112А"/>
+    <Car Type="КУПЕ" Number="09"/>
+    <Tariff Type="..."></Tariff>
+</GtExpress_Request>

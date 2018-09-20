@@ -1,0 +1,4 @@
+<GtExpress_Request Type="DelayTrains">
+    <Station>станция</Station>
+    <ArvDate>дата прибытия</ArvDate>
+</GtExpress_Request>

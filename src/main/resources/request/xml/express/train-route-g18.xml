@@ -1,0 +1,6 @@
+<GtExpress_Request Type="TrainRoute" Answer="Full">
+    <Train Number="номер поезда" />
+    <Station>Станция</Station>
+    <Date>дата</Date>
+    <Standard/>
+</GtExpress_Request>

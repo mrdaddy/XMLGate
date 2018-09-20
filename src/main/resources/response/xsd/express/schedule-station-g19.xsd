@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="GtExpress_Response" type="GtExpress_ResponseType" />
+	<xs:complexType name="RouteType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="Station" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RailwayType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="Code" use="optional" />
+				<xs:attribute type="xs:string" name="Name" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="CarsType">
+		<xs:sequence>
+			<xs:element type="RouteType" name="Route" />
+			<xs:element type="xs:string" name="StopTime" />
+			<xs:element type="xs:string" name="DepTime" />
+			<xs:element type="xs:string" name="ArvTime" />
+			<xs:element type="xs:string" name="TimeInWay" />
+			<xs:element type="RailwayType" name="Railway" />
+			<xs:element type="xs:string" name="DaysOfGo" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrainType">
+		<xs:sequence>
+			<xs:element type="RouteType" name="Route" />
+			<xs:element type="xs:string" name="StopTime" />
+			<xs:element type="xs:string" name="ArvTime" />
+			<xs:element type="xs:string" name="DepTime" />
+			<xs:element type="xs:string" name="TimeInWay" />
+			<xs:element type="RailwayType" name="Railway" />
+			<xs:element type="xs:string" name="DaysOfGo" />
+			<xs:element type="xs:string" name="CarType" />
+			<xs:element type="CarsType" name="Cars" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="Number" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="DepTrainsType">
+		<xs:sequence>
+			<xs:element type="TrainType" name="Train" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TransitTrainsType">
+		<xs:sequence>
+			<xs:element type="TrainType" name="Train" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ArvTrainsType">
+		<xs:sequence>
+			<xs:element type="TrainType" name="Train" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ErrorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:integer" name="Code"/>
+      </xs:extension>
+    </xs:simpleContent>
+    </xs:complexType>
+    <xs:group name="success">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Station" />
+            <xs:element type="xs:string" name="Date" />
+            <xs:element type="DepTrainsType" name="DepTrains" />
+            <xs:element type="TransitTrainsType" name="TransitTrains" />
+            <xs:element type="ArvTrainsType" name="ArvTrains" />
+            <xs:element type="xs:string" name="Addons" />
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="GtExpress_ResponseType">
+		<xs:choice>
+          <xs:group ref="success"/>
+	      <xs:element type="ErrorType" name="Error"/>
+		</xs:choice>
+		<xs:attribute type="xs:string" name="Type" use="required" />
+	</xs:complexType>
+		
+</xs:schema>

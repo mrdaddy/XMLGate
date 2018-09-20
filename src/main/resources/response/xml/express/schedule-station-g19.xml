@@ -1,0 +1,240 @@
+<GtExpress_Response Type="ScheduleStation">
+	<Station>КАЗАНЬ ПАСС</Station>
+	<Date>01.01.2010</Date>
+	<DepTrains>
+		<Train Number="112МВ">
+			<Route>
+				<Station>МОСКВА</Station>
+				<Station>КАЗАНЬ ПАСС</Station>
+				<Station>ЧЕБОКСАРЫ</Station>
+			</Route>
+			<StopTime>00:10</StopTime>
+			<ArvTime>12:30</ArvTime>
+			<DepTime>12:40</DepTime>
+			<TimeInWay>125:23</TimeInWay>
+			<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+			<DaysOfGo>ПО 125</DaysOfGo>
+			<CarType>КПС*</CarType>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+		</Train>
+		<Train Number="112МВ">
+			<Route>
+				<Station>МОСКВА</Station>
+				<Station>КАЗАНЬ ПАСС</Station>
+				<Station>ЧЕБОКСАРЫ</Station>
+			</Route>
+			<StopTime>00:10</StopTime>
+			<ArvTime>12:30</ArvTime>
+			<DepTime>12:40</DepTime>
+			<TimeInWay>125:23</TimeInWay>
+			<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+			<DaysOfGo>ПО 125</DaysOfGo>
+			<CarType>КПС*</CarType>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+		</Train>
+	</DepTrains>
+	<TransitTrains>
+		<Train Number="112МВ">
+			<Route>
+				<Station>МОСКВА</Station>
+				<Station>КАЗАНЬ ПАСС</Station>
+				<Station>ЧЕБОКСАРЫ</Station>
+			</Route>
+			<StopTime>00:10</StopTime>
+			<ArvTime>12:30</ArvTime>
+			<DepTime>12:40</DepTime>
+			<TimeInWay>125:23</TimeInWay>
+			<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+			<DaysOfGo>ПО 125</DaysOfGo>
+			<CarType>КПС*</CarType>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+		</Train>
+		<Train Number="112МВ">
+			<Route>
+				<Station>МОСКВА</Station>
+				<Station>КАЗАНЬ ПАСС</Station>
+				<Station>ЧЕБОКСАРЫ</Station>
+			</Route>
+			<StopTime>00:10</StopTime>
+			<ArvTime>12:30</ArvTime>
+			<DepTime>12:40</DepTime>
+			<TimeInWay>125:23</TimeInWay>
+			<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+			<DaysOfGo>ПО 125</DaysOfGo>
+			<CarType>КПС*</CarType>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+		</Train>
+	</TransitTrains> 
+	<ArvTrains>
+		<Train Number="112МВ">
+			<Route>
+				<Station>МОСКВА</Station>
+				<Station>КАЗАНЬ ПАСС</Station>
+				<Station>ЧЕБОКСАРЫ</Station>
+			</Route>
+			<StopTime>00:10</StopTime>
+			<ArvTime>12:30</ArvTime>
+			<DepTime>12:40</DepTime>
+			<TimeInWay>125:23</TimeInWay>
+			<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+			<DaysOfGo>ПО 125</DaysOfGo>
+			<CarType>КПС*</CarType>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+		</Train>
+		<Train Number="112МВ">
+			<Route>
+				<Station>МОСКВА</Station>
+				<Station>КАЗАНЬ ПАСС</Station>
+				<Station>ЧЕБОКСАРЫ</Station>
+			</Route>
+			<StopTime>00:10</StopTime>
+			<ArvTime>12:30</ArvTime>
+			<DepTime>12:40</DepTime>
+			<TimeInWay>125:23</TimeInWay>
+			<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+			<DaysOfGo>ПО 125</DaysOfGo>
+			<CarType>КПС*</CarType>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+			<Cars>
+				<Route>
+					<Station>КАЗАНЬ ПАС</Station>
+					<Station>ПЕРМЬ 2</Station>
+				</Route>
+				<StopTime>00:10</StopTime>
+				<DepTime>12:40</DepTime>
+				<ArvTime>12:30</ArvTime>
+				<TimeInWay>125:23</TimeInWay>
+				<Railway Code="EF" Name="ОКТЯБРЬСКАЯ">ОКТ</Railway>
+				<DaysOfGo>ПО 125</DaysOfGo>
+			</Cars>
+		</Train>
+	</ArvTrains>
+	<Addons>ТИПЫ ВАГОНОВ:*-ДОП.СЕРВИС;Б-БАГАЖНЫЙ;Р-РЕСТОРАН;+-ФИРМЕННЫЙ
+	</Addons>
+</GtExpress_Response>

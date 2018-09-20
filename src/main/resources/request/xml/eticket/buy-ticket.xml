@@ -1,0 +1,70 @@
+<GtETicket_Request Type="BuyTicket">
+    <StationFrom>Откуда</StationFrom>
+    <StationTo>Куда</StationTo>
+    <DepDate>Когда</DepDate>
+    <DepTime>Точно Когда</DepTime>
+    <Train Number="615" />
+    <Car Type="Скоростной" Number="615Б"
+         ClassService="КУПЕ" />
+    <Requirements>
+        <SeatsTop>Верхние</SeatsTop>
+        <SeatsBottom>Нижние</SeatsBottom>
+        <SeatsRange></SeatsRange>
+        <SeatsComp>В одном месте</SeatsComp>
+        <WoBedding/>
+        <CompType>М/Ж/С</CompType>
+    </Requirements>
+    <CreditCard/>
+    <Passengers>
+        <Blank>
+            <ReturnDate>ReturnDate</ReturnDate>
+            <Passenger>
+                <TCard>1234567890123</TCard>
+                <ChildBirthday>10.12.1975</ChildBirthday>
+                <DocType>DocType</DocType>
+                <Doc>Doc</Doc>
+                <Name>Name</Name>
+                <Birthday>10.12.1975</Birthday>
+                <Citizenship>RUS</Citizenship>
+                <Sex>M</Sex>
+            </Passenger>
+            <Passenger>
+                <TCard>1234567890123</TCard>
+                <ChildBirthday>10.12.1975</ChildBirthday>
+                <DocType>DocType</DocType>
+                <Doc>Doc</Doc>
+                <Name>Name</Name>
+                <Birthday>10.12.1975</Birthday>
+                <Citizenship>RUS</Citizenship>
+                <Sex>M</Sex>
+            </Passenger>
+            <SeatsCount>SeatsCount</SeatsCount>
+            <Tariff>Tariff</Tariff>
+        </Blank>
+        <Blank>
+            <ReturnDate>ReturnDate</ReturnDate>
+            <Passenger>
+                <TCard>1234567890123</TCard>
+                <ChildBirthday>10.12.1975</ChildBirthday>
+                <DocType>DocType</DocType>
+                <Doc>Doc</Doc>
+                <Name>Name</Name>
+                <Birthday>10.12.1975</Birthday>
+                <Citizenship>RUS</Citizenship>
+                <Sex>M</Sex>
+            </Passenger>
+            <Passenger>
+                <TCard>1234567890123</TCard>
+                <ChildBirthday>10.12.1975</ChildBirthday>
+                <DocType>DocType</DocType>
+                <Doc>Doc</Doc>
+                <Name>Name</Name>
+                <Birthday>10.12.1975</Birthday>
+                <Citizenship>RUS</Citizenship>
+                <Sex>M</Sex>
+            </Passenger>
+            <SeatsCount>SeatsCount</SeatsCount>
+            <Tariff>Tariff</Tariff>
+        </Blank>
+    </Passengers>
+</GtETicket_Request>

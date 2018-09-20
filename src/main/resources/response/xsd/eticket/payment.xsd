@@ -1,0 +1,54 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtETicket_Response" type="GtETicket_ResponseType"/>
+    <xs:complexType name="OrderType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="ID"/>
+                <xs:attribute type="xs:string" name="Status"/>
+                <xs:attribute type="xs:string" name="ExpressID"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="RegistrationType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Status"/>
+                <xs:attribute type="xs:string" name="StopDate"/>
+                <xs:attribute type="xs:string" name="StopTime"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="OperationType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Date"/>
+                <xs:attribute type="xs:string" name="Time"/>
+                <xs:attribute type="xs:string" name="HP"/>
+                <xs:attribute type="xs:string" name="DB"/>
+                <xs:attribute type="xs:string" name="HT"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="TicketType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Sign2D"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number" use="optional"/>
+        <xs:attribute type="xs:string" name="ID" use="optional"/>
+        <xs:attribute type="xs:string" name="ExpressID" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="TicketsType">
+        <xs:sequence>
+            <xs:element type="TicketType" name="Ticket" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GtETicket_ResponseType">
+        <xs:sequence>
+            <xs:element type="OrderType" name="Order"/>
+            <xs:element type="RegistrationType" name="Registration"/>
+            <xs:element type="OperationType" name="Operation"/>
+            <xs:element type="TicketsType" name="Tickets"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

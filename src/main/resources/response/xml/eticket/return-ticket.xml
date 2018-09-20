@@ -1,0 +1,16 @@
+<GtETicket_Response Type="ReturnTicket" Action="Info">
+    <Order ID="239" Status="0" StatusInfo="Выполнено" ExpressID="73755844778310"/>
+    <PaymentType>W</PaymentType>
+    <RetTariff>86300</RetTariff>
+    <RetTypeInfo>ВОЗВРАТ</RetTypeInfo>
+    <TimeBeforeDep>916:40</TimeBeforeDep>
+    <Info></Info>
+    <Operation Date="22.04.2015" Time="12:07"/>
+    <II DB="Б" HP="100" HT="08" WB="Б" WM="Б"/>
+    <Tickets>
+        <Ticket Number="1" ID="260" ExpressID="73755844778310">
+            <RetTariff>86300</RetTariff>
+            <TariffInsurance>00000</TariffInsurance>
+        </Ticket>
+    </Tickets>
+</GtETicket_Response>

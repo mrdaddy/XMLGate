@@ -1,0 +1,5 @@
+<GtLocal_Request Type="StationList">
+	<Name>название станции</Name>
+	<Railway>код дороги</Railway>
+	<Country>код государтсва</Country>
+</GtLocal_Request>

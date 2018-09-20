@@ -1,0 +1,4 @@
+<GtETicket_Request Action="Info" Type="ReturnTicket">
+    <Order TicketID="260" ID="239"/>
+</GtETicket_Request>
+ 

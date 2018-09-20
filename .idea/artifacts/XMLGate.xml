@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="XMLGate">
+    <output-path>$PROJECT_DIR$/classes/artifacts/XMLGate</output-path>
+    <root id="archive" name="XMLGate.jar" />
+  </artifact>
+</component>

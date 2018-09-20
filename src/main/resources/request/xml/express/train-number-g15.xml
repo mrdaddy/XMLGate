@@ -1,0 +1,3 @@
+<GtExpress_Request Type="TrainNumber">
+    <Train>номер поезда</Train>
+</GtExpress_Request>

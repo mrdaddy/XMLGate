@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="GtExpress_Response" type="GtExpress_ResponseType" />
+	<xs:complexType name="PassRouteType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="From" />
+				<xs:attribute type="xs:string" name="To" />
+                <xs:attribute type="xs:string" name="CodeFrom"/>
+                <xs:attribute type="xs:string" name="CodeTo"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="RouteType">
+		<xs:sequence>
+			<xs:element type="xs:string" name="Station" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DepartureType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="Time" use="optional" />
+				<xs:attribute type="xs:string" name="Stop" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="ArrivalType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="Date" use="optional" />
+				<xs:attribute type="xs:string" name="Time" use="optional" />
+				<xs:attribute type="xs:string" name="Stop" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="TrainType">
+		<xs:sequence>
+            <xs:element type="xs:string" name="StorageIC"/>
+			<xs:element type="RouteType" name="Route" />
+			<xs:element type="DepartureType" name="Departure" />
+			<xs:element type="ArrivalType" name="Arrival" />
+			<xs:element type="xs:string" name="TimeInWay" />
+			<xs:element type="xs:string" name="DaysOfGo" />
+			<xs:element type="xs:integer" name="Distance" />
+			<xs:element type="xs:string" name="Firm" />
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="Number" use="optional" />
+        <xs:attribute type="xs:string" name="Number2" use="optional"/>
+        <xs:attribute type="xs:string" name="Number3" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="TrainsType">
+		<xs:sequence>
+			<xs:element type="TrainType" name="Train" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="Date" />
+	</xs:complexType>
+	<xs:complexType name="DirectionType" mixed="true">
+		<xs:sequence>
+			<xs:element type="PassRouteType" name="PassRoute"
+				minOccurs="0" />
+			<xs:element type="xs:string" name="NotAllTrains"
+				minOccurs="0" />
+			<xs:element type="TrainsType" name="Trains" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="Type" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="ErrorType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="Code" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:group name="success">
+		<xs:sequence>
+			<xs:element type="DirectionType" name="Direction"
+				maxOccurs="unbounded" minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="GtExpress_ResponseType">
+		<xs:choice>
+			<xs:group ref="success" />
+			<xs:element type="ErrorType" name="Error" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="Type" use="required" />
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,55 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtLocal_Response" type="GtLocal_ResponseType"/>
+    <xs:complexType name="LGIType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="L1"/>
+            <xs:element type="xs:string" name="NM"/>
+            <xs:element type="xs:integer" name="GVC"/>
+            <xs:element type="xs:integer" name="P"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PRSType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="VM"/>
+            <xs:element type="xs:string" name="PT"/>
+            <xs:element type="xs:string" name="ZM"/>
+            <xs:element type="xs:string" name="ZR"/>
+            <xs:element type="xs:string" name="ZA"/>
+            <xs:element type="xs:string" name="PF"/>
+            <xs:element type="xs:string" name="NF"/>
+            <xs:element type="xs:string" name="RZD"/>
+            <xs:element type="xs:string" name="PR"/>
+            <xs:element type="xs:string" name="CN"/>
+            <xs:element type="xs:string" name="AB"/>
+            <xs:element type="xs:string" name="RL"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LGType">
+        <xs:sequence>
+            <xs:element type="LGIType" name="LGI"/>
+            <xs:element type="PRSType" name="PRS"/>
+        </xs:sequence>
+        <xs:attribute type="xs:integer" name="L" use="optional"/>
+        <xs:attribute type="xs:string" name="KS" use="optional"/>
+        <xs:attribute type="xs:string" name="SB" use="optional"/>
+        <xs:attribute type="xs:int" name="D1" use="optional"/>
+        <xs:attribute type="xs:int" name="D2" use="optional"/>
+        <xs:attribute type="xs:integer" name="OWN" use="optional"/>
+        <xs:attribute type="xs:string" name="DE" use="optional"/>
+        <xs:attribute type="xs:string" name="PE" use="optional"/>
+        <xs:attribute type="xs:integer" name="RK" use="optional"/>
+        <xs:attribute type="xs:integer" name="VS" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="SUBKLType">
+        <xs:sequence>
+            <xs:element type="LGType" name="LG" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GtLocal_ResponseType">
+        <xs:sequence>
+            <xs:element type="SUBKLType" name="SUBKL"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+        <xs:attribute type="xs:string" name="LastUpdate"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,147 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtETicket_Response" type="GtETicket_ResponseType"/>
+    <xs:complexType name="OrderType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="ID"/>
+                <xs:attribute type="xs:string" name="ExpressID"/>
+                <xs:attribute type="xs:string" name="CreateDate"/>
+                <xs:attribute type="xs:string" name="CreateTime"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DepartureType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Train"/>
+                <xs:attribute type="xs:string" name="TrainCat"/>
+                <xs:attribute type="xs:string" name="TrainType"/>
+                <xs:attribute type="xs:string" name="Date"/>
+                <xs:attribute type="xs:string" name="Time"/>
+                <xs:attribute type="xs:string" name="Station"/>
+                <xs:attribute type="xs:int" name="StationCode"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ArrivalType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Train"/>
+                <xs:attribute type="xs:string" name="Date"/>
+                <xs:attribute type="xs:string" name="Time"/>
+                <xs:attribute type="xs:string" name="Station"/>
+                <xs:attribute type="xs:int" name="StationCode"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CarrierType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:integer" name="Code" use="optional"/>
+                <xs:attribute type="xs:string" name="Inn" use="optional"/>
+                <xs:attribute type="xs:string" name="Name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ClassServiceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Type"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="OwnerType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Type"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CarType">
+        <xs:sequence>
+            <xs:element type="ClassServiceType" name="ClassService"/>
+            <xs:element type="xs:string" name="AddSigns"/>
+            <xs:element type="CarrierType" name="Carrier"/>
+            <xs:element type="OwnerType" name="Owner"/>
+            <xs:element type="xs:integer" name="TripClass"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number"/>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+    <xs:complexType name="SeatsType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:integer" name="Count"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="PassengerType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Doc" use="optional"/>
+                <xs:attribute type="xs:string" name="Name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="TicketType">
+        <xs:sequence>
+            <xs:element type="xs:float" name="Tariff"/>
+            <xs:element type="xs:float" name="TariffEuro"/>
+            <xs:element type="xs:float" name="TariffNDS"/>
+            <xs:element type="xs:float" name="TariffBP"/>
+            <xs:element type="xs:float" name="TariffB"/>
+            <xs:element type="xs:float" name="TariffP"/>
+            <xs:element type="xs:float" name="TariffInsurance"/>
+            <xs:element type="xs:float" name="TariffService"/>
+            <xs:element type="xs:float" name="TariffServiceNDS"/>
+            <xs:element type="xs:string" name="TariffType"/>
+            <xs:element type="xs:string" name="TariffInfo"/>
+            <xs:element type="xs:integer" name="PassCount"/>
+            <xs:element type="xs:string" name="Seats"/>
+            <xs:element type="xs:string" name="SeatsType"/>
+            <xs:element type="xs:string" name="D5"/>
+            <xs:element type="PassengerType" name="Passenger" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number" use="optional"/>
+        <xs:attribute type="xs:string" name="ID" use="optional"/>
+        <xs:attribute type="xs:string" name="ExpressID" use="optional"/>
+        <xs:attribute type="xs:string" name="NumberReservation" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="TicketsType">
+        <xs:sequence>
+            <xs:element type="TicketType" name="Ticket" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="IIType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="WB"/>
+                <xs:attribute type="xs:string" name="WM"/>
+                <xs:attribute type="xs:string" name="HP"/>
+                <xs:attribute type="xs:string" name="DB"/>
+                <xs:attribute type="xs:string" name="HT"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="GtETicket_ResponseType">
+        <xs:sequence>
+            <xs:element type="OrderType" name="Order"/>
+            <xs:element type="DepartureType" name="Departure"/>
+            <xs:element type="ArrivalType" name="Arrival"/>
+            <xs:element type="CarrierType" name="Carrier"/>
+            <xs:element type="CarType" name="Car"/>
+            <xs:element type="xs:float" name="Tariff"/>
+            <xs:element type="xs:float" name="TariffEuro"/>
+            <xs:element type="xs:string" name="PaymentType"/>
+            <xs:element type="xs:string" name="Agent"/>
+            <xs:element type="xs:integer" name="Subagent"/>
+            <xs:element type="SeatsType" name="Seats"/>
+            <xs:element type="xs:string" name="SignGA"/>
+            <xs:element type="xs:string" name="SignGB"/>
+            <xs:element type="xs:string" name="SignR"/>
+            <xs:element type="TicketsType" name="Tickets"/>
+            <xs:element type="IIType" name="II"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

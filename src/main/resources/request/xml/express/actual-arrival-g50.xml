@@ -1,0 +1,4 @@
+<GtExpress_Request Type="ActualArrival">
+    <Train Number="номер поезда" />
+    <ArvDate>дата прибытия</ArvDate>
+</GtExpress_Request>

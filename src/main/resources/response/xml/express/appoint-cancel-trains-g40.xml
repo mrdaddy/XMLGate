@@ -1,0 +1,18 @@
+<GtExpress_Response Type="AppointCancelTrains">
+    <Train Number="002А">
+        <Route>
+            <Station>МОСКВА КАЗ</Station>
+            <Station>С-ПЕТЕР-ГЛ</Station>
+        </Route>
+        <DateTimeInfo>ДАТЫ ПО СТАНЦИИ ОТПРАВЛЕНИЯ</DateTimeInfo>
+        <DaysOfGo>10.01 11.01</DaysOfGo>
+    </Train>
+    <Train Number="002А">
+        <Route>
+            <Station>МОСКВА КАЗ</Station>
+            <Station>С-ПЕТЕР-ГЛ</Station>
+        </Route>
+        <DateTimeInfo>ДАТЫ ПО СТАНЦИИ ОТПРАВЛЕНИЯ</DateTimeInfo>
+        <DaysOfGo>10.01 11.01</DaysOfGo>
+    </Train>
+</GtExpress_Response>

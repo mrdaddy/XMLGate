@@ -1,0 +1,16 @@
+<GtExpress_Request Type="TrainPlaces" ShowWithoutPlaces="0/1"
+                   DetailNumPlaces="0/1" DetailTypePlaces="0/1">
+    <StationFrom>станция отправления</StationFrom>
+    <StationTo>станция назначения</StationTo>
+    <Tariff Type="...">…</Tariff>
+    <Direction Type="Forward">
+        <DepDate>ДД.ММ.ГГГГ</DepDate>
+        <DepTime>Время отправления поезда</DepTime>
+        <Train Number="номер поезда"/>
+    </Direction>
+    <Direction Type="Backward">
+        <DepDate>ДД.ММ.ГГГГ</DepDate>
+        <DepTime>Время отправления поезда</DepTime>
+        <Train Number="номер поезда"/>
+    </Direction>
+</GtExpress_Request>

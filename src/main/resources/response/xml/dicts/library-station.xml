@@ -1,0 +1,15 @@
+<GtLocal_Response Type="Station">
+	<Station Code="2000000">
+		<NameShort>МОСКВА</NameShort>
+		<NameFull>МОСКВА</NameFull>
+		<Railway Code="ED" Tlf="МСК" Name="Московская" />
+		<Country Code="20" Tlf="РЖД" Name="РОССИЯ" />
+		<BaseStation />
+		<BaseCode>123</BaseCode>
+		<SepNumber>A12</SepNumber>
+		<SF>77</SF>
+		<Okato>1234567890</Okato>
+	</Station>
+	<Station />
+	<Station Multi="1" />
+</GtLocal_Response>

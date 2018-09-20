@@ -1,0 +1,13 @@
+<GtExpress_Response Type="ActualArrival">
+    <Train Number="002A">
+        <Route>
+            <Station>МОСКВА</Station>
+            <Station>КАЗАНЬ</Station>
+        </Route>
+        <DateAndTimeByDeparture/>
+        <ArvSchedule Date="01.01.2010" Time="17:40" />
+        <DelayTime>05:50</DelayTime>
+        <ArvActual Date="02.01.2010" Time="02:34" />
+        <Station>БРЯНСК</Station>
+    </Train>
+</GtExpress_Response>

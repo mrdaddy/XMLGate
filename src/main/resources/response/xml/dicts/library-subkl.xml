@@ -1,0 +1,50 @@
+<GtLocal_Response Type="SUBKL" LastUpdate="01.10.2011 17:34:40">
+    <SUBKL>
+        <LG L="2407" KS="xxxxx" SB="xxxxx" D1="090711" D2="100711" OWN="0015"
+            DE="Y/M6" PE="O" RK="2" VS="0">
+            <LGI>
+                <L1>ИНВАЛИДЫ ВОЙНЫ</L1>
+                <NM>МЗСР</NM>
+                <GVC>01</GVC>
+                <P>50</P>
+            </LGI>
+            <PRS>
+                <VM/>
+                <PT/>
+                <ZM/>
+                <ZR/>
+                <ZA/>
+                <PF/>
+                <NF/>
+                <RZD/>
+                <PR/>
+                <CN/>
+                <AB/>
+                <RL/>
+            </PRS>
+        </LG>
+        <LG L="2407" KS="xxxxx" SB="xxxxx" D1="090711" D2="100711" OWN="0015"
+            DE="Y/M6" PE="O" RK="2" VS="0">
+            <LGI>
+                <L1>ИНВАЛИДЫ ВОЙНЫ</L1>
+                <NM>МЗСР</NM>
+                <GVC>01</GVC>
+                <P>50</P>
+            </LGI>
+            <PRS>
+                <VM/>
+                <PT/>
+                <ZM/>
+                <ZR/>
+                <ZA/>
+                <PF/>
+                <NF/>
+                <RZD/>
+                <PR/>
+                <CN/>
+                <AB/>
+                <RL/>
+            </PRS>
+        </LG>
+    </SUBKL>
+</GtLocal_Response>

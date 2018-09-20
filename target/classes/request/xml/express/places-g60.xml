@@ -1,0 +1,20 @@
+<GtExpress_Request Type="Places" ShowWithoutPlaces="0/1">
+<StationFrom>станция отправления</StationFrom>
+<StationTo>станция назначения</StationTo>
+<Tariff Type="..."> … </Tariff>
+<Carrier>Перевозчик</Carrier>
+<Direction Type="Forward">
+    <Carrier>Перевозчик</Carrier>
+    <DepDate From="01.01.2010" To="05.01.2010"/>
+    <FullDay/>
+    <DepTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</DepTime>
+    <ArvTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</ArvTime>
+</Direction>
+<Direction Type="Backward">
+    <Carrier>Перевозчик</Carrier>
+    <DepDate>ДД.ММ.ГГГГ</DepDate>
+    <FullDay/>
+    <DepTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</DepTime>
+    <ArvTime From="ЧЧ:ММ" To="ЧЧ:ММ">либо код</ArvTime>
+</Direction>
+</GtExpress_Request>

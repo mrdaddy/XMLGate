@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtExpress_Request" type="GtExpress_RequestType"/>
+    <xs:complexType name="GtExpress_RequestType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Station"/>
+            <xs:element type="xs:string" name="Date"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

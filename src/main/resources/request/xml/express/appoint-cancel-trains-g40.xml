@@ -1,0 +1,4 @@
+<GtExpress_Request Type="AppointCancelTrains">
+    <Trains>номера поездов</Trains>
+    <Date From="начальная дата" To="конечная дата" />
+</GtExpress_Request>

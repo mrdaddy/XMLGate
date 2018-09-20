@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="GtLocal_Response" type="GtLocal_ResponseType" />
+	<xs:complexType name="RailwayType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="Code" />
+				<xs:attribute type="xs:string" name="Tlf" />
+				<xs:attribute type="xs:string" name="Name" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="CountryType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="Code" />
+				<xs:attribute type="xs:string" name="Tlf" />
+				<xs:attribute type="xs:string" name="Name" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="StationType" mixed="true">
+		<xs:sequence>
+			<xs:element type="xs:string" name="NameShort" minOccurs="0" />
+			<xs:element type="xs:string" name="NameFull" minOccurs="0" />
+			<xs:element type="RailwayType" name="Railway" minOccurs="0" />
+			<xs:element type="CountryType" name="Country" minOccurs="0" />
+			<xs:element type="xs:string" name="BaseStation" minOccurs="0" />
+			<xs:element type="xs:integer" name="BaseCode" minOccurs="0" />
+			<xs:element type="xs:string" name="SepNumber" minOccurs="0" />
+			<xs:element type="xs:integer" name="SF" minOccurs="0" />
+			<xs:element type="xs:int" name="Okato" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute type="xs:int" name="Code" use="optional" />
+		<xs:attribute type="xs:integer" name="Multi" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="ErrorType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:integer" name="Code" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:group name="success">
+		<xs:sequence>
+			<xs:element type="StationType" name="Station" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="GtLocal_ResponseType">
+		<xs:choice>
+			<xs:group ref="success" />
+			<xs:element type="ErrorType" name="Error" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="Type" use="required" />
+	</xs:complexType>
+</xs:schema>
+
+

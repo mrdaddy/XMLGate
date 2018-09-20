@@ -1,0 +1,68 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtETicket_Request" type="GtETicket_RequestType"/>
+    <xs:complexType name="TrainType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Number"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="CarType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Type"/>
+                <xs:attribute type="xs:string" name="Number"/>
+                <xs:attribute type="xs:string" name="ClassService"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="RequirementsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="SeatsTop"/>
+            <xs:element type="xs:string" name="SeatsBottom"/>
+            <xs:element type="xs:string" name="SeatsRange"/>
+            <xs:element type="xs:string" name="SeatsComp"/>
+            <xs:element type="xs:string" name="WoBedding"/>
+            <xs:element type="xs:string" name="CompType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PassengerType">
+        <xs:sequence>
+            <xs:element type="xs:long" name="TCard"/>
+            <xs:element type="xs:string" name="ChildBirthday"/>
+            <xs:element type="xs:string" name="DocType"/>
+            <xs:element type="xs:string" name="Doc"/>
+            <xs:element type="xs:string" name="Name"/>
+            <xs:element type="xs:string" name="Birthday"/>
+            <xs:element type="xs:string" name="Citizenship"/>
+            <xs:element type="xs:string" name="Sex"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BlankType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="ReturnDate"/>
+            <xs:element type="PassengerType" name="Passenger" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="xs:string" name="SeatsCount"/>
+            <xs:element type="xs:string" name="Tariff"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PassengersType">
+        <xs:sequence>
+            <xs:element type="BlankType" name="Blank" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GtETicket_RequestType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="StationFrom"/>
+            <xs:element type="xs:string" name="StationTo"/>
+            <xs:element type="xs:string" name="DepDate"/>
+            <xs:element type="xs:string" name="DepTime"/>
+            <xs:element type="TrainType" name="Train"/>
+            <xs:element type="CarType" name="Car"/>
+            <xs:element type="RequirementsType" name="Requirements"/>
+            <xs:element type="xs:string" name="CreditCard"/>
+            <xs:element type="PassengersType" name="Passengers"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

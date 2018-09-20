@@ -1,0 +1,68 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtExpress_Response" type="GtExpress_ResponseType"/>
+    <xs:complexType name="RouteType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Station" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RailwayType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Code" use="optional"/>
+                <xs:attribute type="xs:string" name="Name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="SignsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Sign" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ClassServiceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Type" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="SeatsType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:integer" name="First" use="optional"/>
+                <xs:attribute type="xs:integer" name="Last" use="optional"/>
+                <xs:attribute type="xs:integer" name="Count" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ClicheType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Station"/>
+            <xs:element type="SeatsType" name="Seats"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CarType">
+        <xs:sequence>
+            <xs:element type="RouteType" name="Route"/>
+            <xs:element type="RailwayType" name="Railway"/>
+            <xs:element type="SignsType" name="Signs"/>
+            <xs:element type="ClassServiceType" name="ClassService"/>
+            <xs:element type="SeatsType" name="Seats"/>
+            <xs:element type="ClicheType" name="Cliche" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number" use="optional"/>
+        <xs:attribute type="xs:string" name="Type" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="TrainType">
+        <xs:sequence>
+            <xs:element type="CarType" name="Car" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number"/>
+    </xs:complexType>
+    <xs:complexType name="GtExpress_ResponseType">
+        <xs:sequence>
+            <xs:element type="TrainType" name="Train"/>
+            <xs:element type="xs:string" name="SignsInfo"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

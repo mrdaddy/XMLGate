@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtExpress_Response" type="GtExpress_ResponseType"/>
+    <xs:complexType name="RouteType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Station" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ArrivalType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="ScheduleTime" use="optional"/>
+                <xs:attribute type="xs:string" name="DelayTime" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="TrainType">
+        <xs:sequence>
+            <xs:element type="RouteType" name="Route"/>
+            <xs:element type="ArrivalType" name="Arrival"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="TrainsType">
+        <xs:sequence>
+            <xs:element type="TrainType" name="Train" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GtExpress_ResponseType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Date"/>
+            <xs:element type="xs:string" name="Station"/>
+            <xs:element type="TrainsType" name="Trains"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+    </xs:complexType>
+</xs:schema>

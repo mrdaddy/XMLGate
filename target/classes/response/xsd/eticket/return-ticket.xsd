@@ -1,0 +1,63 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="GtEticket_Response" type="GtEticket_ResponseType"/>
+    <xs:complexType name="OrderType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="ID"/>
+                <xs:attribute type="xs:string" name="Status"/>
+                <xs:attribute type="xs:string" name="ExpressID"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DateTime">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Date"/>
+                <xs:attribute type="xs:string" name="Time"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="TicketType">
+        <xs:sequence>
+            <xs:element type="xs:float" name="RetTariff"/>
+            <xs:element type="xs:float" name="TariffInsurance"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Number" use="optional"/>
+        <xs:attribute type="xs:string" name="ID" use="optional"/>
+        <xs:attribute type="xs:string" name="ExpressID" use="optional"/>
+        <xs:attribute type="xs:string" name="KRS" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="TicketsType">
+        <xs:sequence>
+            <xs:element type="TicketType" name="Ticket" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="IIType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="WB"/>
+                <xs:attribute type="xs:string" name="WM"/>
+                <xs:attribute type="xs:string" name="HP"/>
+                <xs:attribute type="xs:string" name="DB"/>
+                <xs:attribute type="xs:string" name="HT"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="GtEticket_ResponseType">
+        <xs:sequence>
+            <xs:element type="OrderType" name="Order"/>
+            <xs:element type="xs:string" name="PaymentType"/>
+            <xs:element type="xs:float" name="RetTariff"/>
+            <xs:element type="xs:string" name="RetTypeInfo"/>
+            <xs:element type="xs:string" name="Info"/>
+            <xs:element type="xs:string" name="TimeBeforeDep"/>
+            <xs:element type="DateTime" name="Operation"/>
+            <xs:element type="xs:string" name="Agent"/>
+            <xs:element type="xs:string" name="Subagent"/>
+            <xs:element type="TicketsType" name="Tickets"/>
+            <xs:element type="IIType" name="II"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Type"/>
+        <xs:attribute type="xs:string" name="Action"/>
+    </xs:complexType>
+</xs:schema>

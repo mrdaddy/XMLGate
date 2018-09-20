@@ -1,0 +1,176 @@
+<GtExpress_Response Type="TrainCarPlaces">
+    <PassRoute From="МОСКВА" To="САНКТ-ПЕТЕРБУРГ"/>
+    <Trains Date="01.01.2010">
+        <Train Number="107" Number2="7040" Type="СК СКРСТ ФИРМ">
+            <Route>
+                <Station>МОСКВА</Station>
+                <Station>С-ПЕТЕР-ГЛ</Station>
+                <Station>ХЕЛЬСИНКИ</Station>
+            </Route>
+            <Departure Time="15:30" Stop="01:15"/>
+            <Arrival Date="02.01.2010" Time="17:36" Stop="00:35"/>
+            <TimeInWay>008:05</TimeInWay>
+            <ElRegPossible/>
+            <DepartureTrain Date="21.12.2009" Time="16:40" />
+            <Length>840</Length>
+            <Brand>САПСАН</Brand>
+            <FirmName>Красная стрела</FirmName>
+            <Comments>
+                <Info>ПОЛУЧИТЬ БИЛЕТ НА СТАНЦИИ ОТПРАВЛЕНИЯ НЕЛЬЗЯ</Info>
+                <Info>ЗАГРАНПАСПОРТ ОБЯЗАТЕЛЕН</Info>
+            </Comments>
+            <Car Number="08" Type="КУПЕ" TrainLetter="Ч">
+                <Fare>
+                    <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                    <ClassServiceInt>1/2</ClassServiceInt>
+                    <AddSigns>У1 МЖ</AddSigns>
+                    <Tariff>1800.2</Tariff>
+                    <TariffService>803.6</TariffService>
+                    <TariffBillet>500.2</TariffBillet>
+                    <TariffPlac>200.2</TariffPlac>
+                    <Carrier Name="ФПД"/>
+                    <Owner Type="РЖД/ОКТ">
+                        <Country Code="20" Name="РОССИЯ"/>
+                        <Railway Code="EF" Name="ОКТЯБРЬСКАЯ"/>
+                    </Owner>
+                    <SaleOnTwo/>
+                    <SaleOnFour/>
+                    <Distance>1287</Distance>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <ElRegPossible>
+                        <UK/>
+                        <AKP/>
+                    </ElRegPossible>
+                    <Station>БРЯНСК</Station>
+                    <NonSmoking/>
+                    <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                           SeatsLateralDn="25" SeatsLateralUp="15"
+                           FreeComp="12"/>
+                    <Places>002,004,006</Places>
+                </Fare>
+                <Fare>
+                    <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                    <ClassServiceInt>1/2</ClassServiceInt>
+                    <AddSigns>У1 МЖ</AddSigns>
+                    <Tariff>1800.2</Tariff>
+                    <TariffService>803.6</TariffService>
+                    <TariffBillet>500.2</TariffBillet>
+                    <TariffPlac>200.2</TariffPlac>
+                    <Carrier Name="ФПД"/>
+                    <Owner Type="РЖД/ОКТ">
+                        <Country Code="20" Name="РОССИЯ"/>
+                        <Railway Code="EF" Name="ОКТЯБРЬСКАЯ"/>
+                    </Owner>
+                    <SaleOnTwo/>
+                    <SaleOnFour/>
+                    <Distance>1287</Distance>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <ElRegPossible>
+                        <UK/>
+                        <AKP/>
+                    </ElRegPossible>
+                    <Station>БРЯНСК</Station>
+                    <NonSmoking/>
+                    <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                           SeatsLateralDn="25" SeatsLateralUp="15"
+                           FreeComp="12"/>
+                    <Places>002,004,006</Places>
+                </Fare>
+            </Car>
+            <Car Number="08" Type="КУПЕ" TrainLetter="Ч">
+                <Fare>
+                    <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                    <ClassServiceInt>1/2</ClassServiceInt>
+                    <AddSigns>У1 МЖ</AddSigns>
+                    <Tariff>1800.2</Tariff>
+                    <TariffService>803.6</TariffService>
+                    <TariffBillet>500.2</TariffBillet>
+                    <TariffPlac>200.2</TariffPlac>
+                    <Carrier Name="ФПД"/>
+                    <Owner Type="РЖД/ОКТ">
+                        <Country Code="20" Name="РОССИЯ"/>
+                        <Railway Code="EF" Name="ОКТЯБРЬСКАЯ"/>
+                    </Owner>
+                    <SaleOnTwo/>
+                    <SaleOnFour/>
+                    <Distance>1287</Distance>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <ElRegPossible>
+                        <UK/>
+                        <AKP/>
+                    </ElRegPossible>
+                    <Station>БРЯНСК</Station>
+                    <NonSmoking/>
+                    <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                           SeatsLateralDn="25" SeatsLateralUp="15"
+                           FreeComp="12"/>
+                    <Places>002,004,006</Places>
+                </Fare>
+                <Fare>
+                    <ClassService Type="1Б">Купейный вагон с УКВ</ClassService>
+                    <ClassServiceInt>1/2</ClassServiceInt>
+                    <AddSigns>У1 МЖ</AddSigns>
+                    <Tariff>1800.2</Tariff>
+                    <TariffService>803.6</TariffService>
+                    <TariffBillet>500.2</TariffBillet>
+                    <TariffPlac>200.2</TariffPlac>
+                    <Carrier Name="ФПД"/>
+                    <Owner Type="РЖД/ОКТ">
+                        <Country Code="20" Name="РОССИЯ"/>
+                        <Railway Code="EF" Name="ОКТЯБРЬСКАЯ"/>
+                    </Owner>
+                    <SaleOnTwo/>
+                    <SaleOnFour/>
+                    <Distance>1287</Distance>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <Country>
+                        <Name>РЖД</Name>
+                        <Distance>1266</Distance>
+                        <TariffBillet>876.00</TariffBillet>
+                    </Country>
+                    <ElRegPossible>
+                        <UK/>
+                        <AKP/>
+                    </ElRegPossible>
+                    <Station>БРЯНСК</Station>
+                    <NonSmoking/>
+                    <Seats SeatsUndef="10" SeatsDn="30" SeatsUp="40"
+                           SeatsLateralDn="25" SeatsLateralUp="15"
+                           FreeComp="12"/>
+                    <Places>002,004,006</Places>
+                </Fare>
+            </Car>
+        </Train>
+    </Trains>
+</GtExpress_Response>

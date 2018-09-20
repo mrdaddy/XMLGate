@@ -1,0 +1,65 @@
+<GtExpress_Response Type="TrainRoute">
+    <Train Number="112А">
+        <Route>
+            <Station>МОСКВА БЕЛ</Station>
+            <Station>ВАРШАВА ВС</Station>
+            <Station>ГАННОВЕР Г</Station>
+            <Station>КРАКОВ ПЛА</Station>
+            <Station>АМСТЕРДАМ</Station>
+        </Route>
+    </Train>
+    <Routes>
+        <Title>ОСНОВНОЙ МАРШРУТ</Title>
+        <Route>
+            <Station>МОСКВА БЕЛ</Station>
+            <Station>АМСТЕРДАМ</Station>
+        </Route>
+        <Route>
+            <Station>МОСКВА БЕЛ</Station>
+            <Station>АМСТЕРДАМ</Station>
+        </Route>
+        <Stop Station="МОСКВА" Code="2000000">
+            <ArvTime>17:40</ArvTime>
+            <WaitingTime>00:10</WaitingTime>
+            <DepTime>17:50</DepTime>
+            <Sign>ТЕХСТОЯНКА</Sign>
+            <Days>01</Days>
+            <Distance>134</Distance>
+        </Stop>
+        <Stop Station="МОСКВА" Code="2000000">
+            <ArvTime>17:40</ArvTime>
+            <WaitingTime>00:10</WaitingTime>
+            <DepTime>17:50</DepTime>
+            <Sign>ТЕХСТОЯНКА</Sign>
+            <Days>01</Days>
+            <Distance>134</Distance>
+        </Stop>
+    </Routes>
+    <Routes>
+        <Title>ОСНОВНОЙ МАРШРУТ</Title>
+        <Route>
+            <Station>МОСКВА БЕЛ</Station>
+            <Station>АМСТЕРДАМ</Station>
+        </Route>
+        <Route>
+            <Station>МОСКВА БЕЛ</Station>
+            <Station>АМСТЕРДАМ</Station>
+        </Route>
+        <Stop Station="МОСКВА" Code="2000000">
+            <ArvTime>17:40</ArvTime>
+            <WaitingTime>00:10</WaitingTime>
+            <DepTime>17:50</DepTime>
+            <Sign>ТЕХСТОЯНКА</Sign>
+            <Days>01</Days>
+            <Distance>134</Distance>
+        </Stop>
+        <Stop Station="МОСКВА" Code="2000000">
+            <ArvTime>17:40</ArvTime>
+            <WaitingTime>00:10</WaitingTime>
+            <DepTime>17:50</DepTime>
+            <Sign>ТЕХСТОЯНКА</Sign>
+            <Days>01</Days>
+            <Distance>134</Distance>
+        </Stop>
+    </Routes>
+</GtExpress_Response>
