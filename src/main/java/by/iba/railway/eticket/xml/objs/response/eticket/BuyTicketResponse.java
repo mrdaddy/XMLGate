@@ -32,6 +32,8 @@ public class BuyTicketResponse extends BaseResponse {
     protected OrderType order;
     @XmlElement(name = "Departure", required = true)
     protected DepartureType departure;
+    @XmlElement(name = "DepartureTrain", required = true)
+    protected DepartureTrainType departureTrain;
     @XmlElement(name = "Arrival", required = true)
     protected ArrivalType arrival;
     @XmlElement(name = "Carrier", required = true)

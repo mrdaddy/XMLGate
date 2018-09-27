@@ -17,7 +17,7 @@ public class DepartureType extends DateTime{
     @XmlAttribute(name = "Station")
     protected String station;
     @XmlAttribute(name = "StationCode")
-    protected Integer stationCode;
+    protected String stationCode;
 
     public String getTrain() {
         return train;
@@ -51,11 +51,11 @@ public class DepartureType extends DateTime{
         this.station = station;
     }
 
-    public Integer getStationCode() {
+    public String getStationCode() {
         return stationCode;
     }
 
-    public void setStationCode(Integer stationCode) {
+    public void setStationCode(String stationCode) {
         this.stationCode = stationCode;
     }
 }

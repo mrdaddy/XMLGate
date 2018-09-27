@@ -9,7 +9,6 @@ import by.iba.railway.eticket.xml.objs.response.express.interfaces.Direction;
 import by.iba.railway.eticket.xml.objs.response.express.interfaces.Directionsable;
 import by.iba.railway.eticket.xml.objs.response.type.common.ErrorType;
 import by.iba.railway.eticket.xml.services.CallbackStatistic;
-import org.apache.commons.codec.binary.Base64;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,6 +18,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.SocketTimeoutException;
 import java.net.URL;
+import java.util.Base64;
 import java.util.Calendar;
 
 public abstract class BaseDao<T extends BaseResponse, K extends BaseRequest>
@@ -170,7 +170,7 @@ public abstract class BaseDao<T extends BaseResponse, K extends BaseRequest>
         conn.setDoOutput(true);
         String userpass = login + ":" + password;
         String basicAuth = "Basic "
-                + new String(Base64.encodeBase64(userpass.getBytes()));
+                + new String(Base64.getEncoder().encode(userpass.getBytes()));
         conn.setRequestProperty("Authorization", basicAuth);
         conn.setConnectTimeout(CON_TIMEOUT_MS);
         conn.setReadTimeout(timeout);
