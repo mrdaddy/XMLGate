@@ -6,5 +6,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "DepartureTrainType")
 public class DepartureTrainType {
     @XmlAttribute(name = "Date")
-    protected String date;
+    private String date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 }
