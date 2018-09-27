@@ -7,21 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="028787d7-5af8-47a4-bed1-4a4a608bae9e" name="Default" comment="development">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/type/buyticket/DepartureTrainType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jsr173_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_birt_runtime_3_7_1_org_apache_commons_codec_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMLGate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLGate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/eticket/BuyTicketResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/eticket/BuyTicketResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/type/buyticket/ArrivalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/type/buyticket/ArrivalType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/type/buyticket/DepartureType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/iba/railway/eticket/xml/objs/response/type/buyticket/DepartureType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/dao/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/objs/response/eticket/BuyTicketResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/objs/response/eticket/BuyTicketResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/objs/response/type/buyticket/ArrivalType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/objs/response/type/buyticket/ArrivalType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/objs/response/type/buyticket/DepartureType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/objs/response/type/buyticket/DepartureType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/test/TestEticketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/iba/railway/eticket/xml/test/TestEticketService.class" afterDir="false" />
     </list>
     <ignored path="XMLGate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -410,7 +400,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538054932021" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538055289797" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="preferences.applicationServers" />
@@ -800,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537433187010</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="development">
+      <created>1538054960652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538054960652</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -808,8 +805,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28685898" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28685898" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="UI Designer" order="3" />
@@ -818,7 +816,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.28691983" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" weight="0.4047619" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839744" visible="true" weight="0.4047619" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32594937" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -827,7 +825,7 @@
       <window_info anchor="bottom" id="IDEtalk Messages" order="8" />
       <window_info anchor="bottom" id="Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50106835" side_tool="true" visible="true" weight="0.4047619" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016026" side_tool="true" visible="true" weight="0.4047619" />
       <window_info anchor="bottom" id="Application Servers" order="12" />
       <window_info active="true" anchor="bottom" id="Messages" order="13" sideWeight="0.49839744" visible="true" weight="0.22402598" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -836,7 +834,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Designer" order="4" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.17681624" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="6" visible="true" weight="0.17681624" />
       <window_info anchor="right" id="IDEtalk" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.1609375" />
       <window_info anchor="right" id="Capture Analysis" order="9" />

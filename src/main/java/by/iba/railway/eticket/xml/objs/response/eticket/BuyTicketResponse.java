@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "GtETicket_ResponseType", propOrder = {
     "order",
     "departure",
+    "departureTrain",
     "arrival",
     "carrier",
     "car",
@@ -189,5 +190,12 @@ public class BuyTicketResponse extends BaseResponse {
 
     public void setIi(IIType ii) {
         this.ii = ii;
+    }
+    public DepartureTrainType getDepartureTrain() {
+        return departureTrain;
+    }
+
+    public void setDepartureTrain(DepartureTrainType departureTrain) {
+        this.departureTrain = departureTrain;
     }
 }
