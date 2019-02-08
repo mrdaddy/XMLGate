@@ -1,8 +1,6 @@
 package by.iba.railway.eticket.xml.objs.response.type.G60;
 
 import by.iba.railway.eticket.xml.objs.response.type.common.*;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
